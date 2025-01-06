@@ -3,12 +3,13 @@ package TestPackage;
 import java.util.HashMap;
 
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import Pages.dashboard;
 import Pages.sausedemo;
 
-
+@Listeners(Listen.class)
 public class saucelabLogin extends Baseclass {
 	public dashboard d;
 	public sausedemo s ;

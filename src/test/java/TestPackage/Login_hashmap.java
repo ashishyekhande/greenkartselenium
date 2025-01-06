@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -12,7 +13,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import Pages.dashboard;
 import Pages.sausedemo;
-
+@Listeners(Listen.class)
 public class Login_hashmap extends Baseclass{
 
 	public dashboard d;

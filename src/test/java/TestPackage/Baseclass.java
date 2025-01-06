@@ -13,6 +13,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -33,9 +37,26 @@ public class Baseclass {
 	
 	public void initialize()
 	{
-		ChromeOptions op = new ChromeOptions();
-		op.addArguments("--incognito");
-		w= new ChromeDriver(op);
+		String  browserName ="chrome";
+		// this line will check the browser name is coming from terminal if from terminal then user name after ? or else after :
+		browserName= System.getProperty("browser")!=null ? System.getProperty("browser"):browserName;
+		if(browserName.equalsIgnoreCase("chrome")) {
+			ChromeOptions op = new ChromeOptions();
+			op.addArguments("--incognito");
+			w= new ChromeDriver(op);
+		}
+		
+		if(browserName.equalsIgnoreCase("edge")) {
+			EdgeOptions op = new EdgeOptions();
+			op.addArguments("--inprivate");
+			w= new EdgeDriver(op);
+		}
+		
+		if(browserName.equalsIgnoreCase("firefox")) {
+			FirefoxOptions op = new FirefoxOptions();
+			op.addArguments("-private");
+			w= new FirefoxDriver(op);
+		}
 		w.manage().window().maximize();
 		w.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		

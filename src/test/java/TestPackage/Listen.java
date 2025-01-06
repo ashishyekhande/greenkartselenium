@@ -12,13 +12,15 @@ public class Listen extends Baseclass implements ITestListener {
 	ExtentReports extent = getextentreports();
 	ExtentTest test;
 	ThreadLocal<ExtentTest> thread = new ThreadLocal<ExtentTest>();
+	
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		ITestListener.super.onTestStart(result);
 		System.out.println("test started");
 		test =extent.createTest(result.getMethod().getMethodName());
-		thread.get().pass("test started");
+		thread.set(test);
+		
 	}
 
 	@Override

@@ -1,21 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-06T13:17:00 IST" name="Default suite" finished-at="2025-01-06T13:17:30 IST" duration-ms="29749">
+  <suite started-at="2025-01-07T00:41:28 IST" name="Suite" finished-at="2025-01-07T00:42:00 IST" duration-ms="31739">
     <groups>
     </groups>
-    <test started-at="2025-01-06T13:17:00 IST" name="Default test" finished-at="2025-01-06T13:17:30 IST" duration-ms="29749">
+    <test started-at="2025-01-07T00:41:28 IST" name="Test3" finished-at="2025-01-07T00:41:33 IST" duration-ms="4425">
+      <class name="TestPackage.saucelabLogin">
+        <test-method signature="sauseloginTest(java.util.HashMap)[pri:0, instance:TestPackage.saucelabLogin@7862f56]" started-at="2025-01-07T00:41:28 IST" name="sauseloginTest" data-provider="login" finished-at="2025-01-07T00:41:32 IST" duration-ms="3558" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{pass=secret_sauce, user=standard_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sauseloginTest -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.saucelabLogin@7862f56]" started-at="2025-01-07T00:41:32 IST" name="terminate" finished-at="2025-01-07T00:41:33 IST" duration-ms="364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- TestPackage.saucelabLogin -->
+    </test> <!-- Test3 -->
+    <test started-at="2025-01-07T00:41:28 IST" name="Test2" finished-at="2025-01-07T00:41:49 IST" duration-ms="20522">
+      <class name="TestPackage.Login_hashmap">
+        <test-method signature="sauseloginTest(java.util.HashMap)[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:28 IST" name="sauseloginTest" data-provider="login" finished-at="2025-01-07T00:41:32 IST" duration-ms="3385" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{pass=secret_sauce, user=standard_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sauseloginTest -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:32 IST" name="terminate" finished-at="2025-01-07T00:41:33 IST" duration-ms="286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+        <test-method signature="sauseloginTest(java.util.HashMap)[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:33 IST" name="sauseloginTest" data-provider="login" finished-at="2025-01-07T00:41:37 IST" duration-ms="4806" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{pass=secret_sauce, user=locked_out_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sauseloginTest -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:37 IST" name="terminate" finished-at="2025-01-07T00:41:38 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+        <test-method signature="sauseloginTest(java.util.HashMap)[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:38 IST" name="sauseloginTest" data-provider="login" finished-at="2025-01-07T00:41:39 IST" duration-ms="1814" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{pass=secret_sauce, user=locked_out_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sauseloginTest -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:39 IST" name="terminate" finished-at="2025-01-07T00:41:40 IST" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+        <test-method signature="sauseloginTest(java.util.HashMap)[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:40 IST" name="sauseloginTest" data-provider="login" finished-at="2025-01-07T00:41:41 IST" duration-ms="1894" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{pass=secret_sauce, user=problem_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sauseloginTest -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:41 IST" name="terminate" finished-at="2025-01-07T00:41:42 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+        <test-method signature="sauseloginTest(java.util.HashMap)[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:42 IST" name="sauseloginTest" data-provider="login" finished-at="2025-01-07T00:41:49 IST" duration-ms="7014" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{pass=secret_sauce, user=performance_glitch_user}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sauseloginTest -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:49 IST" name="terminate" finished-at="2025-01-07T00:41:49 IST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- TestPackage.Login_hashmap -->
+    </test> <!-- Test2 -->
+    <test started-at="2025-01-07T00:41:28 IST" name="Test" finished-at="2025-01-07T00:42:00 IST" duration-ms="31739">
       <class name="TestPackage.greenkartTest">
-        <test-method signature="checkouttest()[pri:0, instance:TestPackage.greenkartTest@3646a422]" started-at="2025-01-06T13:17:00 IST" name="checkouttest" finished-at="2025-01-06T13:17:30 IST" duration-ms="29559" status="PASS">
+        <test-method signature="checkouttest()[pri:0, instance:TestPackage.greenkartTest@39a2bb97]" started-at="2025-01-07T00:41:28 IST" name="checkouttest" finished-at="2025-01-07T00:41:59 IST" duration-ms="31220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkouttest -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.greenkartTest@3646a422]" started-at="2025-01-06T13:17:30 IST" name="terminate" finished-at="2025-01-06T13:17:30 IST" duration-ms="140" status="PASS">
+        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.greenkartTest@39a2bb97]" started-at="2025-01-07T00:42:00 IST" name="terminate" finished-at="2025-01-07T00:42:00 IST" duration-ms="370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
       </class> <!-- TestPackage.greenkartTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
