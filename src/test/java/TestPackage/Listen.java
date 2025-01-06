@@ -11,13 +11,14 @@ public class Listen extends Baseclass implements ITestListener {
 
 	ExtentReports extent = getextentreports();
 	ExtentTest test;
+	ThreadLocal<ExtentTest> thread = new ThreadLocal<ExtentTest>();
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		ITestListener.super.onTestStart(result);
 		System.out.println("test started");
 		test =extent.createTest(result.getMethod().getMethodName());
-		test.pass("test started");
+		thread.get().pass("test started");
 	}
 
 	@Override
@@ -27,7 +28,7 @@ public class Listen extends Baseclass implements ITestListener {
 			try {
 				w=(WebDriver)result.getTestClass().getRealClass().getField("w").get(result.getInstance());
 				
-				test.addScreenCaptureFromPath(getScreenshot(w, result.getMethod().getMethodName()).getAbsolutePath());
+				thread.get().addScreenCaptureFromPath(getScreenshot(w, result.getMethod().getMethodName()).getAbsolutePath());
 				
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
@@ -44,6 +45,7 @@ public class Listen extends Baseclass implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		ITestListener.super.onTestFailure(result);
+		thread.get().fail( result.getThrowable());
 		System.out.println("test Failed");
 		extent.flush();
 	}

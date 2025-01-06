@@ -1,27 +1,33 @@
 package TestPackage;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.File;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
 
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.testng.annotations.BeforeTest;
+import org.apache.commons.io.FileUtils;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import Pages.Basket;
 import Pages.dashboard;
+import Pages.*;
 
-@Listeners(Listen.class)
+//@Listeners(Listen.class)
 public class greenkartTest extends Baseclass {
 
-	dashboard d;
-	@Test//(dataProvider = "veg")
+	public dashboard d;
+	public sausedemo s ;
+	
+	@Test  //itrating vegitable list from excel
 	public void checkouttest() throws Exception
 	{		
+		openURL("https://rahulshettyacademy.com/seleniumPractise/#/");
+		d=dashobj();
 		String a[] =datamethod().split(",");
 		for(String item :a)
 		{
@@ -32,36 +38,20 @@ public class greenkartTest extends Baseclass {
 				
 	}
 	
-	@BeforeTest
-	public void siteopen()
-	{
-		d=openURl("https://rahulshettyacademy.com/seleniumPractise/#/");
-	}
 	
 	
-	public String datamethod() throws Exception
-	{
-		FileInputStream file = new FileInputStream("./Data/veg.xlsx");
-		XSSFWorkbook wb = new XSSFWorkbook(file);
-		XSSFSheet sh = wb.getSheetAt(0);
-		int row = sh.getLastRowNum();
-		int col = sh.getRow(0).getLastCellNum();
-		String a="";
-		Object o [][]= new Object[row][col];
-		for(int i =0;i<row;i++)
-		{
-			XSSFRow rownum = sh.getRow(i+1);
-			for(int j=0;j<col;j++)
-			{
-				o[i][j] =rownum.getCell(j).getStringCellValue();
-				a = o[i][j].toString()+","+a;
-			}
-			
-			
-		}
-		System.out.println(a);
-		return a;
-		
-	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }
