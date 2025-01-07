@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-07T00:41:28 IST" name="Suite" finished-at="2025-01-07T00:42:00 IST" duration-ms="31739">
+  <suite started-at="2025-01-07T10:32:18 IST" name="Suite" finished-at="2025-01-07T10:32:51 IST" duration-ms="32249">
     <groups>
     </groups>
-    <test started-at="2025-01-07T00:41:28 IST" name="Test3" finished-at="2025-01-07T00:41:33 IST" duration-ms="4425">
+    <test started-at="2025-01-07T10:32:18 IST" name="Test3" finished-at="2025-01-07T10:32:24 IST" duration-ms="5191">
       <class name="TestPackage.saucelabLogin">
-        <test-method signature="sauseloginTest(java.util.HashMap)[pri:0, instance:TestPackage.saucelabLogin@7862f56]" started-at="2025-01-07T00:41:28 IST" name="sauseloginTest" data-provider="login" finished-at="2025-01-07T00:41:32 IST" duration-ms="3558" status="PASS">
+        <test-method signature="sauseloginTest(java.util.HashMap)[pri:0, instance:TestPackage.saucelabLogin@6dee4f1b]" started-at="2025-01-07T10:32:18 IST" name="sauseloginTest" data-provider="login" finished-at="2025-01-07T10:32:22 IST" duration-ms="3843" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sauseloginTest -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.saucelabLogin@7862f56]" started-at="2025-01-07T00:41:32 IST" name="terminate" finished-at="2025-01-07T00:41:33 IST" duration-ms="364" status="PASS">
+        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.saucelabLogin@6dee4f1b]" started-at="2025-01-07T10:32:23 IST" name="terminate" finished-at="2025-01-07T10:32:24 IST" duration-ms="306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
       </class> <!-- TestPackage.saucelabLogin -->
     </test> <!-- Test3 -->
-    <test started-at="2025-01-07T00:41:28 IST" name="Test2" finished-at="2025-01-07T00:41:49 IST" duration-ms="20522">
+    <test started-at="2025-01-07T10:32:18 IST" name="Test2" finished-at="2025-01-07T10:32:39 IST" duration-ms="20701">
       <class name="TestPackage.Login_hashmap">
-        <test-method signature="sauseloginTest(java.util.HashMap)[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:28 IST" name="sauseloginTest" data-provider="login" finished-at="2025-01-07T00:41:32 IST" duration-ms="3385" status="PASS">
+        <test-method signature="sauseloginTest_hashmap(java.util.HashMap)[pri:0, instance:TestPackage.Login_hashmap@4b14918a]" started-at="2025-01-07T10:32:19 IST" name="sauseloginTest_hashmap" data-provider="login" finished-at="2025-01-07T10:32:22 IST" duration-ms="3621" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,12 +36,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sauseloginTest -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:32 IST" name="terminate" finished-at="2025-01-07T00:41:33 IST" duration-ms="286" status="PASS">
+        </test-method> <!-- sauseloginTest_hashmap -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.Login_hashmap@4b14918a]" started-at="2025-01-07T10:32:23 IST" name="terminate" finished-at="2025-01-07T10:32:24 IST" duration-ms="427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
-        <test-method signature="sauseloginTest(java.util.HashMap)[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:33 IST" name="sauseloginTest" data-provider="login" finished-at="2025-01-07T00:41:37 IST" duration-ms="4806" status="PASS">
+        <test-method signature="sauseloginTest_hashmap(java.util.HashMap)[pri:0, instance:TestPackage.Login_hashmap@4b14918a]" started-at="2025-01-07T10:32:24 IST" name="sauseloginTest_hashmap" data-provider="login" finished-at="2025-01-07T10:32:27 IST" duration-ms="3285" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,12 +51,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sauseloginTest -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:37 IST" name="terminate" finished-at="2025-01-07T00:41:38 IST" duration-ms="151" status="PASS">
+        </test-method> <!-- sauseloginTest_hashmap -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.Login_hashmap@4b14918a]" started-at="2025-01-07T10:32:27 IST" name="terminate" finished-at="2025-01-07T10:32:27 IST" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
-        <test-method signature="sauseloginTest(java.util.HashMap)[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:38 IST" name="sauseloginTest" data-provider="login" finished-at="2025-01-07T00:41:39 IST" duration-ms="1814" status="PASS">
+        <test-method signature="sauseloginTest_hashmap(java.util.HashMap)[pri:0, instance:TestPackage.Login_hashmap@4b14918a]" started-at="2025-01-07T10:32:27 IST" name="sauseloginTest_hashmap" data-provider="login" finished-at="2025-01-07T10:32:29 IST" duration-ms="1943" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,12 +66,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sauseloginTest -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:39 IST" name="terminate" finished-at="2025-01-07T00:41:40 IST" duration-ms="118" status="PASS">
+        </test-method> <!-- sauseloginTest_hashmap -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.Login_hashmap@4b14918a]" started-at="2025-01-07T10:32:29 IST" name="terminate" finished-at="2025-01-07T10:32:29 IST" duration-ms="116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
-        <test-method signature="sauseloginTest(java.util.HashMap)[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:40 IST" name="sauseloginTest" data-provider="login" finished-at="2025-01-07T00:41:41 IST" duration-ms="1894" status="PASS">
+        <test-method signature="sauseloginTest_hashmap(java.util.HashMap)[pri:0, instance:TestPackage.Login_hashmap@4b14918a]" started-at="2025-01-07T10:32:29 IST" name="sauseloginTest_hashmap" data-provider="login" finished-at="2025-01-07T10:32:31 IST" duration-ms="1897" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,12 +81,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sauseloginTest -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:41 IST" name="terminate" finished-at="2025-01-07T00:41:42 IST" duration-ms="126" status="PASS">
+        </test-method> <!-- sauseloginTest_hashmap -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.Login_hashmap@4b14918a]" started-at="2025-01-07T10:32:32 IST" name="terminate" finished-at="2025-01-07T10:32:32 IST" duration-ms="152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
-        <test-method signature="sauseloginTest(java.util.HashMap)[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:42 IST" name="sauseloginTest" data-provider="login" finished-at="2025-01-07T00:41:49 IST" duration-ms="7014" status="PASS">
+        <test-method signature="sauseloginTest_hashmap(java.util.HashMap)[pri:0, instance:TestPackage.Login_hashmap@4b14918a]" started-at="2025-01-07T10:32:32 IST" name="sauseloginTest_hashmap" data-provider="login" finished-at="2025-01-07T10:32:39 IST" duration-ms="6914" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,24 +96,24 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sauseloginTest -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.Login_hashmap@31bcf236]" started-at="2025-01-07T00:41:49 IST" name="terminate" finished-at="2025-01-07T00:41:49 IST" duration-ms="125" status="PASS">
+        </test-method> <!-- sauseloginTest_hashmap -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.Login_hashmap@4b14918a]" started-at="2025-01-07T10:32:39 IST" name="terminate" finished-at="2025-01-07T10:32:39 IST" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
       </class> <!-- TestPackage.Login_hashmap -->
     </test> <!-- Test2 -->
-    <test started-at="2025-01-07T00:41:28 IST" name="Test" finished-at="2025-01-07T00:42:00 IST" duration-ms="31739">
+    <test started-at="2025-01-07T10:32:18 IST" name="Test1" finished-at="2025-01-07T10:32:51 IST" duration-ms="32249">
       <class name="TestPackage.greenkartTest">
-        <test-method signature="checkouttest()[pri:0, instance:TestPackage.greenkartTest@39a2bb97]" started-at="2025-01-07T00:41:28 IST" name="checkouttest" finished-at="2025-01-07T00:41:59 IST" duration-ms="31220" status="PASS">
+        <test-method signature="checkouttest()[pri:0, instance:TestPackage.greenkartTest@38aa816f]" started-at="2025-01-07T10:32:18 IST" name="checkouttest" finished-at="2025-01-07T10:32:50 IST" duration-ms="31930" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkouttest -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.greenkartTest@39a2bb97]" started-at="2025-01-07T00:42:00 IST" name="terminate" finished-at="2025-01-07T00:42:00 IST" duration-ms="370" status="PASS">
+        <test-method is-config="true" signature="terminate()[pri:0, instance:TestPackage.greenkartTest@38aa816f]" started-at="2025-01-07T10:32:51 IST" name="terminate" finished-at="2025-01-07T10:32:51 IST" duration-ms="155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
       </class> <!-- TestPackage.greenkartTest -->
-    </test> <!-- Test -->
+    </test> <!-- Test1 -->
   </suite> <!-- Suite -->
 </testng-results>

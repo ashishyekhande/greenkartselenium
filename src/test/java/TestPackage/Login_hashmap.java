@@ -16,11 +16,12 @@ import Pages.sausedemo;
 @Listeners(Listen.class)
 public class Login_hashmap extends Baseclass{
 
+	
 	public dashboard d;
 	public sausedemo s ;
 
 	@Test(dataProvider = "login")
-	public void sauseloginTest(HashMap<String , String> a)throws Exception 
+	public void sauseloginTest_hashmap(HashMap<String , String> a)throws Exception 
 	{
 		
 		openURL("https://www.saucedemo.com/");

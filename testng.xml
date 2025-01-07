@@ -5,21 +5,20 @@
 	<listeners>
 		<listener class-name="TestPackage.Listen"></listener>
 	</listeners>
-
-	<test thread-count="5" parallel="tests" name="Test">
+	
+	<test  name="Test1">
 		<classes>
 			<class name="TestPackage.greenkartTest" />
-
 		</classes>
 	</test> <!-- Test -->
 
-	<test thread-count="5" parallel="tests" name="Test2">
+	<test  name="Test2">
 		<classes>
 			<class name="TestPackage.Login_hashmap" />
 		</classes>
 	</test> <!-- Test -->
 
-	<test thread-count="5" parallel="tests" name="Test3">
+	<test  name="Test3">
 		<classes>
 			<class name="TestPackage.saucelabLogin" />
 		</classes>

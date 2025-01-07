@@ -9,6 +9,7 @@ import com.aventstack.extentreports.ExtentTest;
 
 public class Listen extends Baseclass implements ITestListener {
 
+	public WebDriver w; /// most important when you make thread safe each test should have webdriver instance
 	ExtentReports extent = getextentreports();
 	ExtentTest test;
 	ThreadLocal<ExtentTest> thread = new ThreadLocal<ExtentTest>();
