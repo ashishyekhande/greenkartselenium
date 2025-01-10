@@ -49,6 +49,7 @@ public class Basket extends utility {
 		scroll();
 		smartList(ele_button, "Place Order").click();
 		Select s = new Select(w.findElement(By.cssSelector("select")));
+		Thread.sleep(3000);
 		s.selectByVisibleText("India");
 		ele_checkbox.click();
 		smartList(ele_button, "Proceed").click();

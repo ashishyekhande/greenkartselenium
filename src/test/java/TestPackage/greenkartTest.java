@@ -12,7 +12,6 @@ import Pages.*;
 public class greenkartTest extends Baseclass {
 
 	public dashboard d;
-	public sausedemo s ;
 	@Test  //itrating vegitable list from excel
 	public void checkouttest() throws Exception
 	{		
